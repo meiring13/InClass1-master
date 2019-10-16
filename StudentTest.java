@@ -30,6 +30,8 @@ public class StudentTest {
 		Student firstStudent = new Student("x", "Y", 2);
 		Student secondStudent = new Student("x", "Y", 3);
 		
+		
+		
 		int actual = secondStudent.compareTo(firstStudent);
 		boolean result = false;
 		if (actual > 0) 
@@ -56,7 +58,15 @@ public class StudentTest {
 		assertEquals(expected, actual);
 
 	}
+	/*
+	Student student = new Student("A", "A", 5);
+	Student empty = new Student("Z", "", 3);
+	Student secondEmpty = new Student("X", "", 3);
 	
+	CompareLastFirstName clfn = new CompareLastFirstName();
+	
+	clfn.compare(firstStudent, secondStudent);
+	*/
 	@Test
 	public void testGet() throws NameException {
 		Integer expected = 4;
